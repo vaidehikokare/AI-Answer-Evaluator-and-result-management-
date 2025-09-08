@@ -1,0 +1,8 @@
+Django==4.2
+djangorestframework==3.15.0
+transformers==4.40.0
+torch==2.8.0  # May fail on 3.12
+sentence-transformers>=2.2.2
+pandas>=2.1.1
+numpy>=1.25.0
+PyPDF2>=3.0.1
