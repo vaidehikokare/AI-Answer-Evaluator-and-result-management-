@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Grader System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f4f6f9;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* Full screen height */
+    }
+    .hero {
+      background: linear-gradient(135deg, #4e73df, #1cc88a);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      border-radius: 0 0 30px 30px;
+    }
+    .card {
+      border-radius: 20px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    main {
+      flex: 1; /* Pushes footer to bottom */
+    }
+    footer {
+      margin-top: auto; /* Stays at bottom */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <div class="hero">
+    <h1 class="display-4">AI-Powered Auto Grader</h1>
+    <p class="lead">Smart Evaluation of Student Answer Sheets</p>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container mt-5">
+    <div class="row text-center">
+      
+      <!-- Student Section -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow p-4">
+          <h3>👩‍🎓 Student</h3>
+          <p>View your results, feedback, and performance analysis.</p>
+          <a href="/student-login" class="btn btn-primary">Go to Student Portal</a>
+        </div>
+      </div>
+
+      <!-- Teacher Section -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow p-4">
+          <h3>👩‍🏫 Teacher</h3>
+          <p>Upload question papers & answer sheets for evaluation.</p>
+          <a href="/teacher-login" class="btn btn-success">Go to Teacher Portal</a>
+        </div>
+      </div>
+
+      <!-- Principal/HOD Section -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow p-4">
+          <h3>🏫 Principal / HOD</h3>
+          <p>Access department-level results and reports.</p>
+          <a href="/hod-login" class="btn btn-warning">Go to HOD Portal</a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center p-3 bg-dark text-light">
+    <p>&copy; 2025 Auto Grader System | Developed by Team</p>
+  </footer>
+
+</body>
+</html>
